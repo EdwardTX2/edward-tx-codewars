@@ -58,3 +58,18 @@ console.log(stringToNumber("-7"));
 //     // put your code here
 //     return Number(str);
 // }
+//
+// 8kyu - Convert a Number to a String!
+// We need a function that can transform a number (integer) into a string.
+// function numberToString(num) {
+//     // Return a string of the number here!
+//   }
+const numberToString = (num) => num.toString();
+console.log(numberToString(1234));
+console.log(numberToString(605));
+console.log(numberToString(-7));
+// Other solution:
+// function numberToString(num) {
+//     //Return a string of the number here!
+//     return String(num);
+// }
