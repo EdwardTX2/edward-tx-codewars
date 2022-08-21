@@ -79,11 +79,25 @@
 // function boolToWord( bool ){
 //     //...
 //   }
-const boolToWord = (boo) => boo === true ? "Yes" : "No"
-console.log(boolToWord(true));
-console.log(boolToWord(false));
-console.log(boolToWord(true));
+// const boolToWord = (boo) => boo === true ? "Yes" : "No"
+// console.log(boolToWord(true));
+// console.log(boolToWord(false));
+// console.log(boolToWord(true));
 // Most common solution:
 // function boolToWord( bool ){
 //     return bool ? 'Yes':'No';
 // }
+// 8kyu - ReversedStrings
+// Complete the solution so that it reverses the string passed into it.
+// function solution(str){
+//     let reversedStr = ""
+//     for (let i = str.length - 1; i >= 0; i--) {
+//       reversedStr += str[i]
+//     }
+//     return reversedStr;
+// }
+// console.log(solution("Testing"));
+// console.log(solution("Whatever"));
+// console.log(solution("Nowadays"));
+// // refactored
+// const solution = (str) => str.split("").reverse().join("");
