@@ -32,11 +32,29 @@
 // function opposite(number) {
 //     //your code here
 //   }
-const opposite = (num) => -(num);
-console.log(opposite(1));
-console.log(opposite(14));
-console.log(opposite(-34));
+// const opposite = (num) => -(num);
+// console.log(opposite(1));
+// console.log(opposite(14));
+// console.log(opposite(-34));
 // // best solution:
 // function opposite(number) {
 //     return(-number);
+// }
+//
+// 8kyu - Convert a String to a Number!
+// const stringToNumber = function(str){
+//     // put your code here
+//     return null;
+//   }
+const stringToNumber = (str) => Number(str);
+console.log(stringToNumber("1234"));
+console.log(stringToNumber("605"));
+console.log(stringToNumber("-7"));
+// Best solutions
+// var stringToNumber = function(str){
+//     return parseInt(str);
+// }
+// var stringToNumber = function(str){
+//     // put your code here
+//     return Number(str);
 // }
