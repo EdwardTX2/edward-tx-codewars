@@ -101,3 +101,14 @@
 // console.log(solution("Nowadays"));
 // // refactored
 // const solution = (str) => str.split("").reverse().join("");
+//
+// 8kyu - Return Negative
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+// function makeNegative(num) {
+//     //  Code?
+//   }
+const makeNegative = (num) => num >= 0 ? -num : num;
+// other solution:
+// function makeNegative(num) {
+//     return -Math.abs(num);
+// }
