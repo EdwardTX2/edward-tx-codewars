@@ -46,10 +46,10 @@
 //     // put your code here
 //     return null;
 //   }
-const stringToNumber = (str) => Number(str);
-console.log(stringToNumber("1234"));
-console.log(stringToNumber("605"));
-console.log(stringToNumber("-7"));
+// const stringToNumber = (str) => Number(str);
+// console.log(stringToNumber("1234"));
+// console.log(stringToNumber("605"));
+// console.log(stringToNumber("-7"));
 // Best solutions
 // var stringToNumber = function(str){
 //     return parseInt(str);
@@ -64,12 +64,26 @@ console.log(stringToNumber("-7"));
 // function numberToString(num) {
 //     // Return a string of the number here!
 //   }
-const numberToString = (num) => num.toString();
-console.log(numberToString(1234));
-console.log(numberToString(605));
-console.log(numberToString(-7));
+// const numberToString = (num) => num.toString();
+// console.log(numberToString(1234));
+// console.log(numberToString(605));
+// console.log(numberToString(-7));
 // Other solution:
 // function numberToString(num) {
 //     //Return a string of the number here!
 //     return String(num);
+// }
+//
+// 8kyu - Convert boolean values to strings "Yes" or "No"
+// Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+// function boolToWord( bool ){
+//     //...
+//   }
+const boolToWord = (boo) => boo === true ? "Yes" : "No"
+console.log(boolToWord(true));
+console.log(boolToWord(false));
+console.log(boolToWord(true));
+// Most common solution:
+// function boolToWord( bool ){
+//     return bool ? 'Yes':'No';
 // }
