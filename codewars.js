@@ -17,10 +17,10 @@
 // function even_or_odd(number) {
 //
 //}
-even_or_odd = (num) => num %2 === 0 ? "Even" : "Odd";
-console.log(even_or_odd(5));
-console.log(even_or_odd(4));
-console.log(even_or_odd(8));
+// even_or_odd = (num) => num %2 === 0 ? "Even" : "Odd";
+// console.log(even_or_odd(5));
+// console.log(even_or_odd(4));
+// console.log(even_or_odd(8));
 //best solution
 // function even_or_odd(number) {
 //     return number % 2 ? "Odd" : "Even"
@@ -32,10 +32,10 @@ console.log(even_or_odd(8));
 // function opposite(number) {
 //     //your code here
 //   }
-// const opposite = (num) => -(num);
-// console.log(opposite(1));
-// console.log(opposite(14));
-// console.log(opposite(-34));
+const opposite = (num) => -(num);
+console.log(opposite(1));
+console.log(opposite(14));
+console.log(opposite(-34));
 // // best solution:
 // function opposite(number) {
 //     return(-number);
