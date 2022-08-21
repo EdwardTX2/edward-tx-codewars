@@ -107,8 +107,15 @@
 // function makeNegative(num) {
 //     //  Code?
 //   }
-const makeNegative = (num) => num >= 0 ? -num : num;
+// const makeNegative = (num) => num >= 0 ? -num : num;
 // other solution:
 // function makeNegative(num) {
 //     return -Math.abs(num);
 // }
+//
+// 8kyu - Sum of positive
+// function positiveSum(arr) {
+  
+// }
+const positiveSum = (arr) => arr.reduce((acc, c) => c > 0 ? acc + c : acc, 0);
+console.log(positiveSum([5,3,-4,8,-2]));
