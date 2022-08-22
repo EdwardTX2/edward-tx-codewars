@@ -312,5 +312,5 @@
 function check(a, x) {
     return a.includes(x);
 }
-// Common solution:
+// Less common solution:
 // const check = (a,x) => a.includes(x);
