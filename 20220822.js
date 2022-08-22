@@ -332,3 +332,9 @@ var max = function(list){
 //     // create a function which returns an RNA sequence from the given DNA sequence
 // }
 const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
+//
+// 8kyu Simple multiplication
+function simpleMultiplication(number) {
+    // your code........
+}
+const simpleMultiplication = number => number * (number % 2 == 0 ? 8 : 9)
