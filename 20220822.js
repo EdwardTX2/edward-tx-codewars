@@ -98,13 +98,21 @@
 // function maps(x){
 
 // }{
-const maps = (x) => x.map(function(el) { return el*2; });
-console.log(maps([1, 2, 3]), [2, 4, 6]);
-console.log(maps([4, 1, 1, 1, 4]), [8, 2, 2, 2, 8]); 
-console.log(maps([2, 2, 2, 2, 2, 2]), [4, 4, 4, 4, 4, 4]); 
+// const maps = (x) => x.map(function(el) { return el*2; });
+// console.log(maps([1, 2, 3]), [2, 4, 6]);
+// console.log(maps([4, 1, 1, 1, 4]), [8, 2, 2, 2, 8]); 
+// console.log(maps([2, 2, 2, 2, 2, 2]), [4, 4, 4, 4, 4, 4]); 
 // Best solution:
 // function maps(x){
 //     return x.map(n => n * 2);
 // }
 // Or this shortened solution:
 // maps = x => x.map(e => e * 2);
+//
+// 8kyu - You Can't Code Under Pressure #1
+// Double the given integer and return it
+// function doubleInteger(i) {
+//     // i will be an integer. Double it and return it.
+//     return i*2;
+// }
+const doubleInteger = (i) => i*2;
