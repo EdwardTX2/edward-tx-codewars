@@ -213,3 +213,7 @@
 // 8kyu Opposites Attract
 // if one num is even, the other is odd, return true
 const lovefunc = (f1, f2) => (f1 + f2) % 2 == 1
+// Common solution:
+// function lovefunc(flower1, flower2){
+//     return flower1 % 2 !== flower2 % 2;
+// }
