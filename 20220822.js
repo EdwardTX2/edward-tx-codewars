@@ -225,7 +225,18 @@
     
     
 // };
-const sum = (numbers) => numbers.reduce ((t,c) => { return t + c; }, 0);
-console.log(sum([1, 5.2, 4, 0, -1]));
+// const sum = (numbers) => numbers.reduce ((t,c) => { return t + c; }, 0);
+// console.log(sum([1, 5.2, 4, 0, -1]));
 // shorter solution:
 // const sum = n => n.reduce((a,b) => a+b, 0);
+//
+// 8kyu Fake Binary
+// Given a string of digits replace <5 with 0 and above 5 with 1
+// function fakeBin(x){
+
+// }
+const fakeBin = (x) => x.replace(/\d/g, d => d < 5 ? 0 : 1);
+// Another solution:
+// function fakeBin(x) {
+//     return x.split('').map(n => n < 5 ? 0 : 1).join('');
+// }
