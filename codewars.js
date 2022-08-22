@@ -152,13 +152,13 @@
       
 //     }
 //   }
-class SmallestIntegerFinder {
-    findSmallestInt(args) {
-      return Math.min(...args);
-    }
-}
-let sif = new SmallestIntegerFinder;
-console.log(sif.findSmallestInt([78, 54, 44, 2, 88]));
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       return Math.min(...args);
+//     }
+// }
+// let sif = new SmallestIntegerFinder;
+// console.log(sif.findSmallestInt([78, 54, 44, 2, 88]));
 // A solution using sort:
 // class SmallestIntegerFinder {
 //     findSmallestInt(args) {
@@ -166,4 +166,18 @@ console.log(sif.findSmallestInt([78, 54, 44, 2, 88]));
 //       return a - b; } )
 //       return args[0];
 //     }
+// }
+//
+// 8kyu - Square(n)Sum
+// Square each number passed in and sum the results together
+// function squareSum(numbers){
+
+// }
+const squareSum = (nums) => nums.reduce((acc, c) => acc + c*c, 0);
+console.log(squareSum([5,2,3]));
+// Other solution:
+// function squareSum(numbers){
+//     return numbers.reduce(function(sum, n){
+//       return (n*n) + sum;
+//     }, 0)
 // }
