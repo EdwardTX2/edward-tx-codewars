@@ -144,11 +144,30 @@
 // function past(h, m, s){
 //     //#Happy Coding! ^_^
 // }
-const past = (h,m,s) => (1000 * s) + (1000 * 60 * m) + (1000 * 3600 * h)
-console.log(past(0,1,1),61000)
-console.log(past(1,1,1),3661000)
-console.log(past(0,0,0),0)
+// const past = (h,m,s) => (1000 * s) + (1000 * 60 * m) + (1000 * 3600 * h)
+// console.log(past(0,1,1),61000)
+// console.log(past(1,1,1),3661000)
+// console.log(past(0,0,0),0)
 // Common solution:
 // function past(h, m, s){
 //     return ((h*3600)+(m*60)+s)*1000;
 // }
+//
+// 8kyu Count of positives / sum of negatives
+// Given an array of integers.
+// Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+// If the input is an empty array or is null, return an empty array.
+// function countPositivesSumNegatives(input) {
+//     // your code here
+// }
+function countPositivesSumNegatives(input) {
+    let pos = 0, neg = 0;
+    if (input == null || input.length == 0) {
+        return [];
+    } else {
+        input.forEach((n) => n > 0 ? pos++ : neg += n);
+    }
+    return [pos, neg];
+}
+let testData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+console.log(countPositivesSumNegatives(testData));
