@@ -115,4 +115,14 @@
 //     // i will be an integer. Double it and return it.
 //     return i*2;
 // }
-const doubleInteger = (i) => i*2;
+// const doubleInteger = (i) => i*2;
+//
+// 8kyu Abbreviate a Two Word Name
+// function abbrevName(name){
+
+//     // code away
+
+// }
+const abbrevName = (name) => name.split(" ").map((init) => init[0].toUpperCase()).join(".");
+// Other solution with regex:
+// const abbrevName = name => name.match(/\b\w/g).join('.').toUpperCase()
