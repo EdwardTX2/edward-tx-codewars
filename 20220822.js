@@ -309,32 +309,43 @@
 //
 // 8kyu You only need one-Beginner
 // You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
-function check(a, x) {
-    return a.includes(x);
-}
+// function check(a, x) {
+//     return a.includes(x);
+// }
 // Less common solution:
 // const check = (a,x) => a.includes(x);
 //
 // 8kyu Find Maximum and Minimum Values of a List
-var min = function(list){
-    list.sort(function(a, b){return a-b});
-    return list[0];
-}
+// var min = function(list){
+//     list.sort(function(a, b){return a-b});
+//     return list[0];
+// }
 
-var max = function(list){
-    list.sort(function(a, b){return b-a});
-    return list[0];
-}
+// var max = function(list){
+//     list.sort(function(a, b){return b-a});
+//     return list[0];
+// }
 //
 // 8kyu DNA to RNA Conversion
 // Replace T's with U's
 // function DNAtoRNA(dna) {
 //     // create a function which returns an RNA sequence from the given DNA sequence
 // }
-const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
+// const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
 //
 // 8kyu Simple multiplication
-function simpleMultiplication(number) {
-    // your code........
-}
-const simpleMultiplication = number => number * (number % 2 == 0 ? 8 : 9)
+// function simpleMultiplication(number) {
+//     // your code........
+// }
+// const simpleMultiplication = number => number * (number % 2 == 0 ? 8 : 9)
+//
+// 8kyu Will you make it?
+// 
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//     // TODO
+// };
+const zeroFuel = (d, m, f) => (m*f) - d >= 0
+// Popular solution:
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//     return (mpg * fuelLeft) >= distanceToPump;
+// };
