@@ -392,8 +392,28 @@
 // function stringToArray(string){
 // 	// code code code
 // }
-const stringToArray = string => string.split(" ");
+// const stringToArray = string => string.split(" ");
 // common solution:
 // function stringToArray(string){
 //     return string.split(' ');
+// }
+//
+// 8kyu Transportation on vacation
+// function rentalCarCost(d) {
+//     // Your solution here
+// }
+function rentalCarCost(d) {
+    let total = 0
+    if (d >= 7){
+        total = (d * 40) -50
+    } else if (d >= 3) {
+        total = (d * 40) - 20
+    } else {
+        total = d * 40
+    }
+    return total
+  }
+// A good solution:
+// function rentalCarCost(d) {
+//     return d * 40 - (d >= 7 ? 50 : (d >= 3 ? 20 : 0));
 // }
