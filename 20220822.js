@@ -344,7 +344,7 @@
 // const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 //     // TODO
 // };
-const zeroFuel = (d, m, f) => (m*f) - d >= 0
+// const zeroFuel = (d, m, f) => (m*f) - d >= 0
 // Popular solution:
 // const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 //     return (mpg * fuelLeft) >= distanceToPump;
@@ -364,7 +364,7 @@ const zeroFuel = (d, m, f) => (m*f) - d >= 0
 // function smash (words) {
 //     return ""
 // };
-const smash = (words) => words.join(" ");
+// const smash = (words) => words.join(" ");
 // Smash Words
 // function smash (words) {
 //     "use strict";
@@ -376,6 +376,24 @@ const smash = (words) => words.join(" ");
 // function grow(x){
 
 // }
-const grow = x => x.reduce(function(a, b) { return a * b; })
+// const grow = x => x.reduce(function(a, b) { return a * b; })
 // shorter solution:
 // const grow=x=> x.reduce((a,b) => a*b);
+//
+// 8kyu Function 3 - multiplying two numbers
+// Implement a function called multiply, which takes two numbers and returns their product:
+// const multiply = (x,y) => x*y
+// common solution:
+// // Write here your multiply-function
+// const multiply = (a, b) => a * b;
+//
+// 8kyu Convert a string to an array
+// Write a function to split a string and convert it into an array of words.
+// function stringToArray(string){
+// 	// code code code
+// }
+const stringToArray = string => string.split(" ");
+// common solution:
+// function stringToArray(string){
+//     return string.split(' ');
+// }
