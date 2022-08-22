@@ -212,9 +212,18 @@
 // function countSheeps(arrayOfSheep) {
 //     // TODO May the force be with you
 //   }
-const countSheeps = (arr) => arr.reduce((a, v) => (v === true ? a + 1 : a), 0)
-console.log(countSheeps([true, false, true, true]))
+// const countSheeps = (arr) => arr.reduce((a, v) => (v === true ? a + 1 : a), 0)
+// console.log(countSheeps([true, false, true, true]))
 // Solution using filter:
 // function countSheeps(arrayOfSheeps) {
 //     return arrayOfSheeps.filter(Boolean).length;
+// }
+//
+// 8kyu Function 1 -hello world
+// Make a simple function called greet that returns the most-famous "hello world!".
+const greet = () => "hello world!";
+console.log(greet);
+// A basic solution:
+// function greet() {
+//     return "hello world!";
 // }
