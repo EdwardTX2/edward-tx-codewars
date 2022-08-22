@@ -276,15 +276,33 @@
 // const reverseSeq = n => {
 //     return [];
 //   };
-const reverseSeq = n => {
-if (n < 0) return [];
-let arr = [];
-for (n; n > 0; n--) {
-    arr.push(n);
-}
-return arr;
-};
+// const reverseSeq = n => {
+// if (n < 0) return [];
+// let arr = [];
+// for (n; n > 0; n--) {
+//     arr.push(n);
+// }
+// return arr;
+// };
 // Another solution:
 // const reverseSeq = n => {
 //     return Array(n).fill(0).map((e, i) => n - i );
 // };
+//
+// 8kyu Calculate BMI
+// Write function bmi that calculates body mass index (bmi = weight / height2).
+function bmi(weight, height) {
+    let bmi = weight / (height * height);
+    if (bmi <= 18.5) {
+        return "Underweight"; 
+    }
+    else if (bmi <= 25.0) {
+        return "Normal";
+    }
+    else if (bmi <= 30.0) {
+        return "Overweight";
+    }
+    else {
+        return "Obese";
+    }
+}
