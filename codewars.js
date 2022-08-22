@@ -186,7 +186,23 @@
 // function noSpace(x){
 
 // }
-const noSpace = (str) => str.replace(/\s/g, '');
-console.log(noSpace("What are we even doing here?"))
+// const noSpace = (str) => str.replace(/\s/g, '');
+// console.log(noSpace("What are we even doing here?"))
 // Solution using split and join methods
 // function noSpace(x){return x.split(' ').join('')}
+//
+// 8kyu - Grasshopper-Summation
+// Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+// var summation = function (num) {
+//     // Code here
+// }
+var summation = function (num) {
+    let total = 0
+    for (let i =1; i <= num; i++) {
+        total += i
+    }
+    return total
+}
+console.log(summation(5))
+// Another solution:
+// const summation = n => n * (n + 1) / 2;
