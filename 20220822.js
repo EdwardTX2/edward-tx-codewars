@@ -212,8 +212,20 @@
 //
 // 8kyu Opposites Attract
 // if one num is even, the other is odd, return true
-const lovefunc = (f1, f2) => (f1 + f2) % 2 == 1
+// const lovefunc = (f1, f2) => (f1 + f2) % 2 == 1
 // Common solution:
 // function lovefunc(flower1, flower2){
 //     return flower1 % 2 !== flower2 % 2;
 // }
+//
+// 8kyu Sum Arrays
+// Sum Numbers
+// function sum (numbers) {
+//     "use strict";
+    
+    
+// };
+const sum = (numbers) => numbers.reduce ((t,c) => { return t + c; }, 0);
+console.log(sum([1, 5.2, 4, 0, -1]));
+// shorter solution:
+// const sum = n => n.reduce((a,b) => a+b, 0);
