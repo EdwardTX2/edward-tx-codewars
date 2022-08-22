@@ -349,3 +349,13 @@ const zeroFuel = (d, m, f) => (m*f) - d >= 0
 // const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 //     return (mpg * fuelLeft) >= distanceToPump;
 // };
+//
+// 8kyu How good are you really?
+// Given array of peers test scores, calculate avg and compare to your score
+// function betterThanAverage(classPoints, yourPoints) {
+//     // Your code here
+// }
+function betterThanAverage(classPoints, yourPoints) {
+    let classAvg = (yourPoints + classPoints.reduce((a, b) => a + b, 0)) / (classPoints.length + 1);
+    return yourPoints > classAvg;
+}
