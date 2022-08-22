@@ -46,3 +46,16 @@ console.log(basicOp('*', 5, 5), 25);
 //         default: return 'Operation must be one of + - * /';
 //     }
 // }
+//
+// 8kyu - Returning Strings
+// Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
+// function greet(name){
+//     //your code here
+// }
+const greet = (name) => `Hello, ${name} how are you doing today?`
+console.log(greet("Ryan"), "Hello, Ryan how are you doing today?");
+console.log(greet("Shingles"), "Hello, Shingles how are you doing today?");
+// Most common solution:
+// function greet(name){
+//     return `Hello, ${name} how are you doing today?`;
+// }
