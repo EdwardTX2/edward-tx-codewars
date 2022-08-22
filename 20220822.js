@@ -32,10 +32,10 @@
 // {
 //   // Code
 // }
-const basicOp = (op, n1, n2) => eval(n1 + op + n2)
-console.log(basicOp('+', 4, 7), 11);
-console.log(basicOp('-', 15, 18), -3);
-console.log(basicOp('*', 5, 5), 25);
+// const basicOp = (op, n1, n2) => eval(n1 + op + n2)
+// console.log(basicOp('+', 4, 7), 11);
+// console.log(basicOp('-', 15, 18), -3);
+// console.log(basicOp('*', 5, 5), 25);
 // Another solution:
 // function basicOp(operation, value1, value2) {
 //     switch (operation) {
@@ -64,10 +64,31 @@ console.log(basicOp('*', 5, 5), 25);
 // function booleanToString(b){
 //     //your code here
 // }
-const booleanToString = (b) => b ? "true" : "false"
-console.log(booleanToString(true), "true", 'When we pass in true, we want the string "true" as output');
-console.log(booleanToString(false), "false", 'When we pass in false, we want the string "false" as output');
+// const booleanToString = (b) => b ? "true" : "false"
+// console.log(booleanToString(true), "true", 'When we pass in true, we want the string "true" as output');
+// console.log(booleanToString(false), "false", 'When we pass in false, we want the string "false" as output');
 // Common solution:
 // function booleanToString(b){
 //     return b.toString();
+// }
+//
+// 8kyu - Convert number to reversed array of digits
+// function digitize(n) {
+//     //code here
+// }
+const digitize = (n) => { 
+    const str = String(n);
+    const arr = str.split('');
+    arr.reverse();
+    return arr.map(num => Number(num))
+}
+console.log(digitize(35231),[1,3,2,5,3]);
+console.log(digitize(0),[0]);
+// Two other solutions:
+// function digitize(n) {
+//     return String(n).split('').map(Number).reverse()
+// }
+// and:
+// function digitize(n) {
+//     return Array.from(String(n), Number).reverse();
 // }
