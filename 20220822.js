@@ -291,18 +291,26 @@
 //
 // 8kyu Calculate BMI
 // Write function bmi that calculates body mass index (bmi = weight / height2).
-function bmi(weight, height) {
-    let bmi = weight / (height * height);
-    if (bmi <= 18.5) {
-        return "Underweight"; 
-    }
-    else if (bmi <= 25.0) {
-        return "Normal";
-    }
-    else if (bmi <= 30.0) {
-        return "Overweight";
-    }
-    else {
-        return "Obese";
-    }
+// function bmi(weight, height) {
+//     let bmi = weight / (height * height);
+//     if (bmi <= 18.5) {
+//         return "Underweight"; 
+//     }
+//     else if (bmi <= 25.0) {
+//         return "Normal";
+//     }
+//     else if (bmi <= 30.0) {
+//         return "Overweight";
+//     }
+//     else {
+//         return "Obese";
+//     }
+// }
+//
+// 8kyu You only need one-Beginner
+// You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+function check(a, x) {
+    return a.includes(x);
 }
+// Common solution:
+// const check = (a,x) => a.includes(x);
