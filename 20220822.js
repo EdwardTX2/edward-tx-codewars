@@ -132,8 +132,23 @@
 // function findNeedle(haystack) {
 //     // your code here
 // }
-const findNeedle = (haystack) => 'found the needle at position ' + haystack.indexOf("needle");
+// const findNeedle = (haystack) => 'found the needle at position ' + haystack.indexOf("needle");
 // Popular Solution:
 // function findNeedle(haystack) {
 //     return "found the needle at position " + haystack.indexOf("needle");
+// }
+//
+// 8kyu Beginner Series #2 Clock
+// Clock shows h hours, m minutes and s seconds after midnight.
+// Your task is to write a function which returns the time since midnight in milliseconds.
+// function past(h, m, s){
+//     //#Happy Coding! ^_^
+// }
+const past = (h,m,s) => (1000 * s) + (1000 * 60 * m) + (1000 * 3600 * h)
+console.log(past(0,1,1),61000)
+console.log(past(1,1,1),3661000)
+console.log(past(0,0,0),0)
+// Common solution:
+// function past(h, m, s){
+//     return ((h*3600)+(m*60)+s)*1000;
 // }
