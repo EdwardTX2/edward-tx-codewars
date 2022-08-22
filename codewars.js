@@ -196,13 +196,25 @@
 // var summation = function (num) {
 //     // Code here
 // }
-var summation = function (num) {
-    let total = 0
-    for (let i =1; i <= num; i++) {
-        total += i
-    }
-    return total
-}
-console.log(summation(5))
+// var summation = function (num) {
+//     let total = 0
+//     for (let i =1; i <= num; i++) {
+//         total += i
+//     }
+//     return total
+// }
+// console.log(summation(5))
 // Another solution:
 // const summation = n => n * (n + 1) / 2;
+//
+// 8kyu - Counting Sheep
+// Function that counts the true's in an array
+// function countSheeps(arrayOfSheep) {
+//     // TODO May the force be with you
+//   }
+const countSheeps = (arr) => arr.reduce((a, v) => (v === true ? a + 1 : a), 0)
+console.log(countSheeps([true, false, true, true]))
+// Solution using filter:
+// function countSheeps(arrayOfSheeps) {
+//     return arrayOfSheeps.filter(Boolean).length;
+// }
