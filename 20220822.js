@@ -365,3 +365,17 @@ const zeroFuel = (d, m, f) => (m*f) - d >= 0
 //     return ""
 // };
 const smash = (words) => words.join(" ");
+// Smash Words
+// function smash (words) {
+//     "use strict";
+//     return words.join(' ');
+// };
+//
+// 8kyu Beginner - Reduce but Grow
+// Given a non-empty array of integers, return the result of multiplying the values together in order. Example: [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+// function grow(x){
+
+// }
+const grow = x => x.reduce(function(a, b) { return a * b; })
+// shorter solution:
+// const grow=x=> x.reduce((a,b) => a*b);
