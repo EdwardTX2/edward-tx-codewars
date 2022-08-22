@@ -19,9 +19,30 @@
 //     // Finish this :)
 //     return;
 // }
-const century = (year) => Math.ceil(year *.01)
-console.log(century(1705))
-console.log(century(1900))
-console.log(century(1601))
+// const century = (year) => Math.ceil(year *.01)
+// console.log(century(1705))
+// console.log(century(1900))
+// console.log(century(1601))
 // common solution:
 // const century = year => Math.ceil(year/100)
+//
+// 8kyu - Basic Mathematical Operations
+// Given operation (string/char), value1, and value2, return result of the operation
+// function basicOp(operation, value1, value2)
+// {
+//   // Code
+// }
+const basicOp = (op, n1, n2) => eval(n1 + op + n2)
+console.log(basicOp('+', 4, 7), 11);
+console.log(basicOp('-', 15, 18), -3);
+console.log(basicOp('*', 5, 5), 25);
+// Another solution:
+// function basicOp(operation, value1, value2) {
+//     switch (operation) {
+//         case '+': return value1 + value2;
+//         case '-': return value1 - value2;
+//         case '*': return value1 * value2;
+//         case '/': return value1 / value2;
+//         default: return 'Operation must be one of + - * /';
+//     }
+// }
