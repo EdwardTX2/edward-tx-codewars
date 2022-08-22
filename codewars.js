@@ -125,9 +125,45 @@
 // function repeatStr (n, s) {
 //     return '';
 //   }
-const repeatStr = (n, s) => s.repeat(n)
-console.log(repeatStr(5, 'Testing'));
+// const repeatStr = (n, s) => s.repeat(n)
+// console.log(repeatStr(5, 'Testing'));
 // Most often solution:
 // function repeatStr (n, s) {
 //     return s.repeat(n);
+// }
+//!Ranked up to 7kyu
+//
+// 8kyu - Remove First and Last Character
+// function removeChar(str){
+//     //You got this!
+//    };
+// const removeChar = (str) => str.substring(1, str.length - 1);
+// console.log(removeChar("Welcome"));
+// Best solution:
+// function removeChar(str) {
+//     return str.slice(1, -1);
+//  }
+// or:
+// const removeChar = str => str.slice(1,-1)
+//
+// 8kyu Find the smallest integer in the array (not empty)
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+      
+//     }
+//   }
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      return Math.min(...args);
+    }
+}
+let sif = new SmallestIntegerFinder;
+console.log(sif.findSmallestInt([78, 54, 44, 2, 88]));
+// A solution using sort:
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       args.sort(function(a, b) {
+//       return a - b; } )
+//       return args[0];
+//     }
 // }
