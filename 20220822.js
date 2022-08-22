@@ -242,10 +242,24 @@
 // }
 //
 // 8kyu Are You Playing Banjo?
-function areYouPlayingBanjo(name) {
-    if (name[0].toUpperCase() === 'R') {
-      return name + ' plays banjo';
+// function areYouPlayingBanjo(name) {
+//     if (name[0].toUpperCase() === 'R') {
+//       return name + ' plays banjo';
+//     } else {
+//       return name + ' does not play banjo';
+//     }
+// }
+//
+// 8kyu Calculate average
+// Write a function which calculates the average of the numbers in a given list.
+function find_average(array) {
+    if (array.length < 1) {
+      return 0
     } else {
-      return name + ' does not play banjo';
+      return array.reduce((a, b) => a + b, 0) / array.length;
     }
 }
+// Another solution:
+// function find_average(arr) {
+//     return arr.length > 0? arr.reduce((a, b) => a + b) / arr.length : 0;
+// }
