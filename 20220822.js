@@ -265,8 +265,26 @@
 // }
 //
 // 8kyu Is he gonna survive?
-const hero = (b, d) => b / d >= 2
+// const hero = (b, d) => b / d >= 2
 // Common solution:
 // function hero(bullets, dragons){
 //     return bullets >= dragons * 2
 // }
+//
+// 8kyu Reversed sequence
+// Build a function that returns an array of integers from n to 1 where n>0.
+// const reverseSeq = n => {
+//     return [];
+//   };
+const reverseSeq = n => {
+if (n < 0) return [];
+let arr = [];
+for (n; n > 0; n--) {
+    arr.push(n);
+}
+return arr;
+};
+// Another solution:
+// const reverseSeq = n => {
+//     return Array(n).fill(0).map((e, i) => n - i );
+// };
