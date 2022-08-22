@@ -173,11 +173,20 @@
 // function squareSum(numbers){
 
 // }
-const squareSum = (nums) => nums.reduce((acc, c) => acc + c*c, 0);
-console.log(squareSum([5,2,3]));
+// const squareSum = (nums) => nums.reduce((acc, c) => acc + c*c, 0);
+// console.log(squareSum([5,2,3]));
 // Other solution:
 // function squareSum(numbers){
 //     return numbers.reduce(function(sum, n){
 //       return (n*n) + sum;
 //     }, 0)
 // }
+//
+// 8kyu Remove String Spaces
+// function noSpace(x){
+
+// }
+const noSpace = (str) => str.replace(/\s/g, '');
+console.log(noSpace("What are we even doing here?"))
+// Solution using split and join methods
+// function noSpace(x){return x.split(' ').join('')}
