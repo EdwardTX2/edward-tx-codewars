@@ -235,8 +235,17 @@
 // function fakeBin(x){
 
 // }
-const fakeBin = (x) => x.replace(/\d/g, d => d < 5 ? 0 : 1);
+// const fakeBin = (x) => x.replace(/\d/g, d => d < 5 ? 0 : 1);
 // Another solution:
 // function fakeBin(x) {
 //     return x.split('').map(n => n < 5 ? 0 : 1).join('');
 // }
+//
+// 8kyu Are You Playing Banjo?
+function areYouPlayingBanjo(name) {
+    if (name[0].toUpperCase() === 'R') {
+      return name + ' plays banjo';
+    } else {
+      return name + ' does not play banjo';
+    }
+}
