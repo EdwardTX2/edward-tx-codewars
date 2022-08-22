@@ -171,3 +171,10 @@ function countPositivesSumNegatives(input) {
 }
 let testData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
 console.log(countPositivesSumNegatives(testData));
+//
+// 8kyu MakeUpperCase
+// Write a function which converts the input string to uppercase.
+// function makeUpperCase(str) {
+//     // Code here
+// }
+const makeUpperCase = (str) => str.toUpperCase();
