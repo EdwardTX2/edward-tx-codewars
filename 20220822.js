@@ -160,21 +160,39 @@
 // function countPositivesSumNegatives(input) {
 //     // your code here
 // }
-function countPositivesSumNegatives(input) {
-    let pos = 0, neg = 0;
-    if (input == null || input.length == 0) {
-        return [];
-    } else {
-        input.forEach((n) => n > 0 ? pos++ : neg += n);
-    }
-    return [pos, neg];
-}
-let testData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
-console.log(countPositivesSumNegatives(testData));
+// function countPositivesSumNegatives(input) {
+//     let pos = 0, neg = 0;
+//     if (input == null || input.length == 0) {
+//         return [];
+//     } else {
+//         input.forEach((n) => n > 0 ? pos++ : neg += n);
+//     }
+//     return [pos, neg];
+// }
+// let testData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+// console.log(countPositivesSumNegatives(testData));
 //
 // 8kyu MakeUpperCase
 // Write a function which converts the input string to uppercase.
 // function makeUpperCase(str) {
 //     // Code here
 // }
-const makeUpperCase = (str) => str.toUpperCase();
+// const makeUpperCase = (str) => str.toUpperCase();
+//
+// 8kyu invert values
+// Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+// function invert(array) {
+//     return ;
+// }
+function invert(array) {
+    let arr = array.map(function(num) {
+        if (num > 0) {
+            return -num;
+        } else {
+            return Math.abs(num);
+        }
+    })
+    return arr;
+}
+// better solution:
+// const invert = array => array.map(num => -num);
