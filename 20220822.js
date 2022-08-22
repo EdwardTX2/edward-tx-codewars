@@ -123,6 +123,17 @@
 //     // code away
 
 // }
-const abbrevName = (name) => name.split(" ").map((init) => init[0].toUpperCase()).join(".");
+// const abbrevName = (name) => name.split(" ").map((init) => init[0].toUpperCase()).join(".");
 // Other solution with regex:
 // const abbrevName = name => name.match(/\b\w/g).join('.').toUpperCase()
+//
+// 8kyu A Needle in the Haystack
+// take array of junk and find index of needle
+// function findNeedle(haystack) {
+//     // your code here
+// }
+const findNeedle = (haystack) => 'found the needle at position ' + haystack.indexOf("needle");
+// Popular Solution:
+// function findNeedle(haystack) {
+//     return "found the needle at position " + haystack.indexOf("needle");
+// }
