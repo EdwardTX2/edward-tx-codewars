@@ -52,10 +52,22 @@ console.log(basicOp('*', 5, 5), 25);
 // function greet(name){
 //     //your code here
 // }
-const greet = (name) => `Hello, ${name} how are you doing today?`
-console.log(greet("Ryan"), "Hello, Ryan how are you doing today?");
-console.log(greet("Shingles"), "Hello, Shingles how are you doing today?");
+// const greet = (name) => `Hello, ${name} how are you doing today?`
+// console.log(greet("Ryan"), "Hello, Ryan how are you doing today?");
+// console.log(greet("Shingles"), "Hello, Shingles how are you doing today?");
 // Most common solution:
 // function greet(name){
 //     return `Hello, ${name} how are you doing today?`;
+// }
+//
+// 8kyu - Convert a Boolean to a String
+// function booleanToString(b){
+//     //your code here
+// }
+const booleanToString = (b) => b ? "true" : "false"
+console.log(booleanToString(true), "true", 'When we pass in true, we want the string "true" as output');
+console.log(booleanToString(false), "false", 'When we pass in false, we want the string "false" as output');
+// Common solution:
+// function booleanToString(b){
+//     return b.toString();
 // }
