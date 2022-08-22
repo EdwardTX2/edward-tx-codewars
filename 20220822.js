@@ -355,7 +355,13 @@ const zeroFuel = (d, m, f) => (m*f) - d >= 0
 // function betterThanAverage(classPoints, yourPoints) {
 //     // Your code here
 // }
-function betterThanAverage(classPoints, yourPoints) {
-    let classAvg = (yourPoints + classPoints.reduce((a, b) => a + b, 0)) / (classPoints.length + 1);
-    return yourPoints > classAvg;
-}
+// function betterThanAverage(classPoints, yourPoints) {
+//     let classAvg = (yourPoints + classPoints.reduce((a, b) => a + b, 0)) / (classPoints.length + 1);
+//     return yourPoints > classAvg;
+// }
+//
+// 8kyu Sentence Smash
+// function smash (words) {
+//     return ""
+// };
+const smash = (words) => words.join(" ");
